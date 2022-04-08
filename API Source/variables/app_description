@@ -1,0 +1,33 @@
+### The social Library Management System of the future.
+
+ The Alexandria API supports the interface of the system and behaves as a connector between interface and database.
+ Several endpoints have been implemented to support system functionality and users are broken down into 5 different
+ categories.
+ 
+## Public
+ Users under this category have access to the bare minimum of the system. Endpoints not locked behind token requirements
+ are the only functions available to these users. Endpoints open to the public mostly consist of gathering information about
+ users already allowed to the public. This is due to change as potentially, "public" users may be required to have a access token
+ with security scopes attached.
+ 
+## Basic
+ Basic users have access to the most basic features of the system. This includes being able to talk in the forum and quality of life
+ features such as editing their own profile image and controlling their own lists and public information. They do not have access
+ to managing anything related to the information or inventory of books, information related to events, access and control over other
+ users information, and forum moderation.
+ 
+## Moderator
+ Moderators have the same access to features found for Basic users. However, Moderators also have access to forum features meant
+ for moderating behavior of users in the forum. This includes being able to delete another user's posts, restrict a user from
+ being able to leave posts, deleting topics, and adding banned terminology. Event, books, and user information management are all
+ restricted for these users.
+ 
+## Librarians
+ Librarians have access to modifying information found for literature and also being able to manage events found on the calendar. 
+ These users, however, do not have access to forum moderation nor are able to manage user permission or user information. 
+ 
+## Administrators 
+ Administrators have access to all features of the system aside functions locked by the system. 
+ 
+Roles are not mutually exclusive and users are able to retain multiple security scopes. Being able to change a roles' responsibilties or
+add flexibility in being able to create new user permission groups may be something to consider implementing in the future.
